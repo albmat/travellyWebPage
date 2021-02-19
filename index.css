@@ -46,6 +46,22 @@ input {
   font-size: 1.5em;
 }
 
+.header-dropdown {
+  background: #e7e7e7;
+  border-radius: calc(0.25rem - 1px);
+  padding: 10px;
+  width: auto;
+}
+
+.header-dropdown-item {
+  list-style-type: none;
+}
+
+.header-nav-bar-item {
+  color: black;
+  text-decoration: none;
+}
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -54,7 +70,9 @@ input {
 }
 
 .header-title {
+  font-size: 3.5em;
   font-weight: 300;
+  padding: 1%;
 }
 
 .header-search-form {
@@ -65,14 +83,14 @@ input {
 
 .header-search-input {
   padding: 8px;
-  width: 250px;
+  width: 350px;
 }
 
 .header-search-button {
   background: #fd4f32;
   border: 0px;
   font-weight: 700;
-  min-width: 80px;
+  min-width: 150px;
   width: auto;
 }
 
@@ -103,7 +121,7 @@ input {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .section1-body {
     display: flex;
     flex-direction: column;
@@ -113,7 +131,7 @@ input {
 .card-section1 {
   height: auto;
   margin: 5px;
-  min-height: 380px;
+  min-height: 300px;
   width: 18rem;
 }
 
@@ -128,6 +146,7 @@ input {
 
 .card-title {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
 
 .card-text {
@@ -156,16 +175,9 @@ input {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .section2-body {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .card-section2 {
   margin: 5px;
-  width: 18rem;
+  width: 20rem;
 }
 
 .section2-search-bar {
@@ -186,14 +198,22 @@ input {
 .section2-search-input {
   background: #e7e7e7;
   padding: 8px;
-  width: 250px;
+  width: 350px;
 }
 
 .section2-search-button {
   background: #fd4f32;
   border: 0px;
   font-weight: 700;
+  min-width: 150px;
   width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .section2-body {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Footer */
@@ -206,7 +226,7 @@ input {
   justify-content: space-between;
   margin: auto;
   min-height: 80px;
-  padding: 0 10%;
+  padding: 0 5%;
   width: 100%;
 }
 
@@ -218,13 +238,14 @@ input {
 
 .footer-nav-bar {
   margin: auto 0;
+  width: auto;
 }
 
 .footer-nav-bar {
   display: flex;
   flex-direction: row;
   font-size: 90%;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .footer-nav-bar-item {
@@ -234,7 +255,7 @@ input {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column-reverse;
   }
