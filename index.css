@@ -132,6 +132,7 @@ input {
   height: auto;
   margin: 5px;
   min-height: 300px;
+  max-height: 350px;
   width: 18rem;
 }
 
@@ -187,6 +188,7 @@ input {
 
 .section2-search-title {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
 
 .section2-search-form {
