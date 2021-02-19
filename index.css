@@ -4,12 +4,19 @@ body {
   margin: 0;
 }
 
+input {
+  border: none;
+}
+
 /* Header */
 
 .header-container {
   background-image: url('img/background-header-img.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 600px;
   text-align: center;
@@ -33,8 +40,65 @@ body {
 }
 
 .header-content {
+  display: flex;
+  flex-direction: column;
   height: 550px;
-  position: absolute;
-  top: 275px;
+  justify-content: center;
+}
+
+.header-search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-search-input {
+  padding: 5px;
+}
+
+.header-search-button {
+  background: #fd4f32;
+  border: 0px;
+  width: 80px;
+}
+
+/* Section 1 */
+
+.section1-container {
+  background: #e7e7e7;
+  height: 600px;
+  margin: auto;
   width: 100%;
+}
+
+.section1-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .section1-container {
+    background: #e7e7e7;
+    height: auto;
+    margin: auto;
+    width: 100%;
+  }
+
+  .section1-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.card {
+  margin: 5px;
+  width: 18rem;
+}
+
+.card-img-top {
+  min-height: 200px;
+  max-height: 200px;
 }
