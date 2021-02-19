@@ -1,0 +1,40 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* Header */
+
+.header-container {
+  background-image: url('img/background-header-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  width: 100%;
+}
+
+.header-nav-bar {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.header-nav-bar-brand,
+.header-nav-bar-dropdown {
+  margin: auto 0;
+  text-decoration: none;
+}
+
+.header-content {
+  height: 550px;
+  position: absolute;
+  top: 275px;
+  width: 100%;
+}
