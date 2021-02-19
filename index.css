@@ -115,30 +115,23 @@ input {
 }
 
 .section1-body {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .section1-body {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .card-section1 {
   height: auto;
   margin: 5px;
-  min-height: 300px;
   max-height: 350px;
+  min-height: 300px;
   width: 18rem;
 }
 
 .card-img-top {
-  min-height: 200px;
   max-height: 200px;
+  min-height: 200px;
 }
 
 .card-img-price {
@@ -152,6 +145,13 @@ input {
 
 .card-text {
   color: #696969;
+}
+
+@media only screen and (max-width: 768px) {
+  .section1-body {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Section 2 */
@@ -170,10 +170,10 @@ input {
 }
 
 .section2-body {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .card-section2 {
