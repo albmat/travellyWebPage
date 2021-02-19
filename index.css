@@ -29,7 +29,7 @@ input {
   height: 50px;
   justify-content: space-between;
   margin: auto;
-  padding: 0 50px;
+  padding: 0 10%;
   width: 100%;
 }
 
@@ -53,47 +53,50 @@ input {
 }
 
 .header-search-input {
-  padding: 5px;
+  padding: 8px;
+  width: 250px;
 }
 
 .header-search-button {
   background: #fd4f32;
   border: 0px;
-  width: 80px;
+  min-width: 80px;
+  width: auto;
 }
 
 /* Section 1 */
 
 .section1-container {
   background: #e7e7e7;
-  height: 600px;
+  height: auto;
   margin: auto;
+  padding: 5%;
   width: 100%;
+}
+
+.section1-header {
+  padding: 0 10% 1% 10%;
+}
+
+.section1-header-p {
+  padding-left: 2%;
 }
 
 .section1-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-  .section1-container {
-    background: #e7e7e7;
-    height: auto;
-    margin: auto;
-    width: 100%;
-  }
-
   .section1-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
   }
 }
 
-.card {
+.card-section1 {
   margin: 5px;
   width: 18rem;
 }
@@ -101,4 +104,65 @@ input {
 .card-img-top {
   min-height: 200px;
   max-height: 200px;
+}
+
+.card-img-price {
+  padding-top: 150px;
+}
+
+/* Section 2 */
+
+.section2-container {
+  height: auto;
+  margin: auto;
+  padding: 2% 10%;
+  width: 100%;
+}
+
+.section2-title {
+  font-size: 4em;
+  padding: 2%;
+}
+
+.section2-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .section2-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-section2 {
+  border: none;
+  margin: 5px;
+  width: 18rem;
+}
+
+.section2-search-bar {
+  padding: 5%;
+  text-align: center;
+}
+
+.section2-search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section2-search-input {
+  background: #e7e7e7;
+  padding: 8px;
+  width: 250px;
+}
+
+.section2-search-button {
+  background: #fd4f32;
+  border: 0px;
+  width: auto;
 }
